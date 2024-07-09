@@ -1,0 +1,792 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(pics/figma.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:"Montserrat", sans-serif;
+    overflow-x: hidden;
+    
+}
+
+.nav1 ul{
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: -5%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;   
+    gap: 42px; 
+    
+}
+.nav1{
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    color: rgba(255, 255, 255, 0.95);
+}
+.nav1 .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.877);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+    cursor: pointer;
+    color: #0c020d;
+}
+.sid{
+    margin-top: 2%;
+}
+.menu-button{
+    display: none;
+    margin-right: 8px;
+
+}
+.menu-button svg {
+    fill: #fff; 
+}
+.logo{
+    height: 42px;
+    margin-top: 3px;
+}
+.nav1 li:first-child {
+    margin-right: auto; 
+    margin-left: 5%;
+}
+.white-text {
+    color: white;
+}
+
+.outline-text {
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* Outline width and color */
+    font-weight: bold; /* Adjust as needed */
+    font-family:"Montserrat", sans-serif;
+}
+.title{
+    font-size: 4rem;
+    font-family:"Montserrat", sans-serif;
+}
+.landingp{
+    font-weight: 300;
+    color: #fff;
+    font-size: 2rem;
+    
+}
+.landingleft{
+    margin-left: 7%;
+    margin-top: 5%;
+}
+.landingright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 30px;
+    
+}
+
+:root{
+    --pink: hsl(338, 70%, 55%);
+    --teal:  hsl(183, 70%, 62%);
+    --white: hsl(334, 7%, 95%);
+}
+pre{
+    margin-top: 25%;
+    --selector: var(--pink);
+    --property:var(--teal);
+    --punctuation:var(--pink);
+
+    font-size: 2.3rem;
+    font-weight: bold;
+    background: hsl(222, 45%, 7%);
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fff;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+
+    transform: 
+    perspective(5000px)
+    rotateY(var(--rotateY))
+    rotateX(var(--rotateX));
+
+}
+
+.selector{
+    color: var(--selector);
+}
+.property{
+    color: var(--property);
+}
+.punctuation{
+    color: var(--punctuation);
+}
+pre > *{
+    text-shadow: 0 0 0.3em currentColor;
+}
+pre::before,
+pre::after{
+    content:"";
+    position: absolute;
+    border-radius: inherit;
+}
+
+pre::before{
+    inset:0.75rem;
+    background: black;
+    transform: translateZ(-49px);
+    filter: blur(15px);
+    opacity: 0.5;
+}
+pre::after{
+    inset: -0.6rem;
+    background: 
+    linear-gradient(-45deg, rgb(44, 238, 228), rgb(198, 57, 241));
+    transform:translateZ(-50px);
+}
+.landingpage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+.email .buttons input[type="text"],
+.email .buttons input[type="email"] {
+    padding: 12px 15px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Example border styling */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Example font size */
+    background-color: #f1f1f1; 
+    border-radius: 1.5rem;
+}
+.emailbtn{
+    padding: 12px 15px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Example border styling */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Example font size */
+    background: 
+    linear-gradient(-45deg, rgb(44, 238, 228), rgb(198, 57, 241));
+    border-radius: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+.email{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.text{
+    color: #fff;
+}
+.hspan{
+    font-weight: 700;
+}
+.emailh{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+    gap: 10px;
+    margin-left: -3%;
+}
+.emailtitle{
+    color: lightgrey;
+}
+.email{
+    background: 
+    linear-gradient(-45deg, rgb(78, 67, 245), rgb(198, 57, 241));
+    transform:translateZ(-50px);
+    border-radius: 3.5rem 0.5rem 3.5rem 0.5rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding-bottom: 3%;
+    backdrop-filter: blur(20px); /* Adjust blur radius as needed */
+    -webkit-backdrop-filter: blur(20px); 
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 85%;
+    gap: 20px;
+    color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.heading4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card{
+    width: 320px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 3.5rem 0.5rem 3.5rem 0.5rem;
+}
+#card1{
+    background-image: url(pics/Untitled\ \(1\).png);
+    background-size: cover;
+}
+#card2{
+    background-image: url(pics/Untitled\ \(2\).png);
+    background-size: cover;
+}
+#card3{
+    background-image: url(pics/Untitled\ \(3\).png);
+    background-size: cover;
+}
+.card p{
+    line-height: 1.2;
+}
+.servicetitle{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin-bottom: 4%;
+    width: 100%;
+    margin-left: 9.5%;
+}
+.services{
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+.steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    color: #fff;
+    gap: 150px;
+    margin-top: 10%;
+    margin-left: auto; /* Add this */
+    margin-right: auto;
+    overflow:hidden;
+}
+.stepstitle{
+    font-size: 2.5rem;
+}
+.stepsp{
+    font-size: 2rem;
+}
+.stepheading{
+    background-image: url(pics/Group\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    margin: 0;
+    position: relative;
+}
+.stepsleft h3{
+    position: absolute; /* Position h3 absolutely within stepheading */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center h3 */
+    z-index: 1; /* Ensure h3 is on top */
+    margin: 0;
+    font-size: 1.8rem;
+}
+.stepsleft p{
+    font-size: 1.3rem;
+}
+.step{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.why{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    overflow: hidden;
+}
+.whyimg{
+    height: 600px;
+}
+.whyright .headingp{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.whyp{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.btn{
+    margin-top: 2%;
+    padding: 12px 15px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Example border styling */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Example font size */
+    background: 
+    linear-gradient(-45deg, rgb(44, 238, 228), rgb(198, 57, 241));
+    border-radius: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1px;
+    margin-bottom: 1%;
+}
+
+.footerp{
+    display: flex;
+}
+.socials img{
+    height: 37px;
+}
+.footerp{
+    font-size: 1rem;
+    display: flex;
+    gap: 25px;
+    color: lightgray;
+}
+.line {
+    height: 1.2px; /* Adjust the height of the line */
+    background-image: linear-gradient(to right, #000235,rgb(44, 238, 228),#000235); /* Gradient colors */
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: flex;
+        margin-right: 2%;
+    }
+    .nav1{
+        overflow-x: hidden;
+    }
+    
+
+
+    body{
+        background-image: url(pics/iPhone\ 13\ &\ 14\ -\ 1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        margin: 0 auto; 
+        width: 100vw;
+
+        
+    }
+   .logo{
+    display: none;
+   }
+   pre{
+    font-size: 1rem;
+    margin-right: 5.5%;
+
+  }
+  .title{
+    font-size: 2rem;
+    overflow: hidden;
+  }
+  .landingpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .landingleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0%;
+  }
+  .landingp{
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .email .buttons input[type="text"],
+  .email .buttons input[type="email"] {
+    padding: 4px 6px; /* Adjust padding as needed */
+    font-size: 8px;
+    width: 30%;
+}
+.emailbtn{
+    padding: 5.9px 6px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Example border styling */
+    font-size: 10px; /* Example font size */
+
+}
+.emailtitle{
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 9%;
+    width: 90%;
+}
+.email{
+    width: 89%;
+    margin-top: 25%;
+}
+.emailh{
+    font-size: 0.9rem;
+    margin-top: 2%;
+    width: 90%;
+
+}
+.buttons{
+    margin-bottom: 6%;
+    gap: 4px;
+    margin-right: 3%;
+    width: 90%;
+
+}
+.text{
+    margin-left: 10px;
+}
+.card{
+    width: 270px;
+    height: 180px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.cards{
+    flex-direction: column;
+}
+.card p{
+    font-size: 14px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servicetitle{
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 10%;
+}
+.steps {
+    flex-direction: column; /* Stack the elements vertically */
+}
+
+.stepsright {
+    order: -1; /* Ensure .stepsright appears first */
+    text-align: center;
+    width: 80%;
+}
+.stepsright h3{
+    font-size: 1.8rem;
+}
+.stepsright p{
+    font-size: 1.5rem;
+}
+.stepsleft{
+    width: 95%;
+}
+.stepheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.stepstitle{
+    text-align: center;
+}
+.stepsleft h3{
+    font-size: 1.3rem;
+}
+.stepsleft p{
+    font-size: 1rem;
+}
+.steps{
+    gap: 30px;
+}
+.why{
+    flex-direction: column;
+    margin-top: 5%;
+}
+.whyimg{
+    height: 350px;
+}
+.whyright .headingp{
+    font-size: 1rem;
+    text-align: center;
+}
+.whyp{
+    font-size: 0.9rem;
+    text-align: center;
+}
+.btn{
+    padding: 10px 12px; /* Adjust padding as needed */
+    font-size: 14px; /
+    
+}
+.whybtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+.footerp{
+    font-size: 0.8rem;
+    display: flex;
+    gap: 15px;
+    color: lightgray;
+}
+.socials img{
+    height: 30px;
+}
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo{
+        display: none;
+       }
+       pre{
+        font-size: 1rem;
+        margin-right: 25% !important;
+        margin-left: -10%;
+      }
+      .title{
+        font-size: 2rem;
+      }
+      .landingpage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .landingleft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0%;
+      }
+      .landingp{
+        font-size: 1.5rem;
+        width: 90%;
+      }
+      .email .buttons input[type="text"],
+      .email .buttons input[type="email"] {
+        padding: 5px 3px; /* Adjust padding as needed */
+        font-size: 10px;
+        width: 30%;
+    }
+    .emailbtn{
+        padding: 8px 12px; /* Adjust padding as needed */
+        border: 1px solid #ccc; /* Example border styling */
+        font-size: 10px; /* Example font size */
+    
+    }
+    .emailtitle{
+        font-size: 10px;
+        margin-bottom: 0;
+        margin-top: 9%;
+        width: 90%;
+    }
+    .email{
+        width: 65%;
+        margin-top: 25%;
+    }
+    .emailh{
+        font-size: 0.9rem;
+        margin-top: 2%;
+        width: 90%;
+    
+    }
+    .buttons{
+        margin-bottom: 6%;
+        gap: 2px;
+        margin-right: 3%;
+        width: 90%;
+    
+    }
+    .text{
+        margin-left: 10px;
+    }
+    .card{
+        width: 270px;
+        height: 180px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    
+    .services{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .servicetitle{
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+    .steps {
+        flex-direction: row; /* Stack the elements vertically */
+    }
+    
+    .stepsright {
+        order: -1; /* Ensure .stepsright appears first */
+        text-align: center;
+        width: 80%;
+    }
+    .stepsright h3{
+        font-size: 1.8rem;
+    }
+    .stepsright p{
+        font-size: 1.5rem;
+    }
+    .stepsleft{
+        width: 95%;
+    }
+    .stepheading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    .stepstitle{
+        text-align: center;
+    }
+    .stepsleft h3{
+        font-size: 1.3rem;
+    }
+    .stepsleft p{
+        font-size: 1rem;
+    }
+    .steps{
+        gap: 30px;
+    }
+    .why{
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .whyimg{
+        height: 400px;
+    }
+    .whyright .headingp{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .whyp{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .btn{
+        padding: 10px 12px; /* Adjust padding as needed */
+        font-size: 14px; /
+        
+    }
+    .whybtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 7%;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .footerp{
+        font-size: 0.8rem;
+        display: flex;
+        gap: 15px;
+        color: lightgray;
+    }
+    .socials img{
+        height: 30px;
+    }
+
+}
